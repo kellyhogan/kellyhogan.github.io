@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Hamburger from "./Hamburger"
 
 import "./Navbar.css"
 
@@ -45,6 +46,7 @@ class Navbar extends React.Component {
             <li className="nav-li">About</li>
             <li className="nav-li">Projects</li>
             <li className="nav-li">Contact</li>
+            <li className="nav-li"><Hamburger /></li>
         </ul>
       </nav>
     );
