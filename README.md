@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-The Hamgurger icon in Hamburger.js was modified from this [example](https://reactjsexample.com/react-hamburger-button/) by Duarte Monteiro
+The Hamgurger icon in [Hamburger.js](src/components/Hamburger.js) was modified from this [example](https://reactjsexample.com/react-hamburger-button/) by Duarte Monteiro.
 
 <p align="center">
   <a href="https://www.gatsbyjs.org">
