@@ -15,17 +15,24 @@ class Hamburger extends React.Component {
   	this.setState({isToggled: !this.state.isToggled});
   };
 
+  componentDidMount() {
+    window.addEventListener("click", this.handleClick);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("click", this.handleClick);
+  }
+
   render() {
     return (
       <svg 
         viewBox="0 0 96 96"
-        onClick={this.handleClick}
         className="hamburger-icon"
       >
         <Motion
 		  style={{
-            x: spring(this.state.isToggled ? 1 : 0, presets.wobbly),
-            y: spring(this.state.isToggled ? 0: 1, presets.wobbly)
+            x: spring(this.state.isToggled ? 1 : 0, presets.gentle),
+            y: spring(this.state.isToggled ? 0: 1, presets.gentle)
           }}
         >
           {({ x, y }) =>
