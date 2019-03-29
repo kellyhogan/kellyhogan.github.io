@@ -42,11 +42,21 @@ class Navbar extends React.Component {
     return (
       <nav id="navbar" className={this.handleClassName()}>
         <ul className="nav-ul">
-            <li className="nav-li">Home</li>
-            <li className="nav-li">About</li>
-            <li className="nav-li">Projects</li>
-            <li className="nav-li">Contact</li>
-            <li className="nav-li"><Hamburger /></li>
+            <li className="nav-li">
+              <a href="/">Home</a>
+            </li>
+            <li className="nav-li">
+              <a href="/">About</a>
+            </li>
+            <li className="nav-li">
+              <a href="/">Projects</a>
+            </li>
+            <li className="nav-li">
+              <a href="/">Contact</a>
+            </li>
+            <li className="hidden-icon">
+              <Hamburger />
+            </li>
         </ul>
       </nav>
     );
