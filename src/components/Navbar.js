@@ -14,15 +14,14 @@ class Navbar extends React.Component {
   }
  
   handleScroll = () => {
-    if(!this.state.isHamburgerToggled){
-      const {scrollHeight} = this.state;
-      const newScrollHeight = window.scrollY;
-      const isNavVisable = newScrollHeight <= scrollHeight;
-      this.setState({
-        scrollHeight: newScrollHeight,
-        isNavVisable: isNavVisable
-      });
-    }
+    const {scrollHeight} = this.state;
+    const newScrollHeight = window.scrollY;
+    const isNavVisable = newScrollHeight <= scrollHeight;
+    this.setState({
+      scrollHeight: newScrollHeight,
+      isNavVisable: isNavVisable,
+      isHamburgerToggled: false
+    });
   };
 
   handleNavClassName = () => {
