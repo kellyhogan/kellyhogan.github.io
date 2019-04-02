@@ -1,5 +1,4 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+import { Link, animateScroll as scroll } from "react-scroll"
 import React from "react"
 import Hamburger from "./Hamburger"
 
@@ -22,6 +21,10 @@ class Navbar extends React.Component {
       isNavVisable: isNavVisable,
       isHamburgerToggled: false
     });
+  };
+
+  scrollToTop = () => {
+    scroll.scrollToTop();
   };
 
   handleNavClassName = () => {
@@ -62,10 +65,42 @@ class Navbar extends React.Component {
     return (
       <nav id="navbar" className={this.handleNavClassName()}>
         <div>
-          <a href="/" className={this.handleMenuClassName()}>Home</a>
-          <a href="/" className={this.handleMenuClassName()}>About</a>
-          <a href="/" className={this.handleMenuClassName()}>Projects</a>
-          <a href="/" className={this.handleMenuClassName()}>Contact</a>
+          <div className={this.handleMenuClassName()} onClick={this.scrollToTop}>
+             Home
+          </div>
+          <Link
+            className={this.handleMenuClassName()}
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            About
+          </Link>
+          <Link
+            className={this.handleMenuClassName()}
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Projects
+          </Link>
+          <Link
+            className={this.handleMenuClassName()}
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Contact
+          </Link>
           <div className={this.handleHamburgerClassName()}>
             {this.renderHamburger()}
           </div>

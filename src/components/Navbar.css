@@ -15,17 +15,8 @@ nav {
   top: -100px;
 }
 
-nav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-}
-
-nav a:hover {
+.nav-li.active {
   color: #ff5b4d;
-  margin: 0;
 }
 
 .nav-li {
@@ -37,6 +28,15 @@ nav a:hover {
   transition: all 0.3s ease-in;
   margin: 0;
   float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-li:hover {
+  color: #ff5b4d;
+  margin: 0;
 }
 
 .hidden-icon {
