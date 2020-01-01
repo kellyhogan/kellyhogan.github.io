@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from "react-scroll"
+import {Link} from "react-scroll"
 import React from "react"
 import Hamburger from "./Hamburger"
 
