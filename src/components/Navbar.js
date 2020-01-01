@@ -23,10 +23,6 @@ class Navbar extends React.Component {
     });
   };
 
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
   handleNavClassName = () => {
     return !this.state.isNavVisable ? "hidden-nav" : ""
   };
@@ -46,7 +42,7 @@ class Navbar extends React.Component {
   renderHamburger = () => {
     return (
       <Hamburger
-        onClick={() => this.handleClick()} onKeyDown={this.handleClick}
+        onClick={() => this.handleClick()} onKeyDown={() => this.handleClick}
         isToggled={this.state.isHamburgerToggled}
       />
     );
@@ -65,7 +61,15 @@ class Navbar extends React.Component {
     return (
       <nav id="navbar" className={this.handleNavClassName()}>
         <div>
-          <Link className={this.handleMenuClassName()} onClick={this.scrollToTop} onKeyDown={this.handleClick} to="home">
+          <Link 
+            className={this.handleMenuClassName()} 
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
              Home
           </Link>
           <Link
