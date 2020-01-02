@@ -1,0 +1,21 @@
+.header-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  /*text-shadow: #494969 1px 0 10px;*/
+  text-shadow: #0a0a0f 1px 0 10px;
+  /*background-color: rgba(224, 224, 235, 0.5)*/
+}
+
+.intro {
+  font-size: 3rem;
+  line-height: 150%;
+}
