@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "./Image"
+import HomeImage from "./HomeImage"
 
 import "./Home.css"
 
@@ -13,7 +13,7 @@ export default ({id}) => (
           I'm a Software Developer.
         </h1>        
       </div>
-      <Image />
+      <HomeImage />
     </div>
   </div>
 );
