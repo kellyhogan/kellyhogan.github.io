@@ -7,3 +7,7 @@
    text-align: center;
    line-height: 160%
 }
+
+.crop {
+overflow: hidden;
+}

@@ -1,6 +1,7 @@
 import React from "react"
 
 import "./About.css"
+import ProfileImage from "./AboutImage"
 
 export default ({id}) => (
   <div id={id}>
@@ -13,12 +14,15 @@ export default ({id}) => (
   >
    About 
   </h1>
+  <div className="crop">
+    <ProfileImage />
+  </div>
+  <br />
   <p className="about-me">
     I am a Software Developer for&nbsp;
     <a href="https://www.jpmorganchase.com/" target="_blank" rel="noopener noreferrer">
       JPMorgan Chase & Co.
     </a>
-    &nbsp;in the New York Metropolitan Area.
     <br/>
     My main expertise is backend development but I also have a passion for mobile development and creating engaging user experiences.
   </p>
