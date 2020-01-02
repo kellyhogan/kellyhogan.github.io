@@ -11,10 +11,10 @@ export default () => (
       <li className="footer-li creation">
         © {new Date().getFullYear()}, Built with &nbsp;
         {` `}
-        <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a>
+        <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
       </li>
   	  <li className="footer-li">
- 	      <a title="github" href="https://github.com/kellyhogan" target="_blank">
+ 	      <a title="github" href="https://github.com/kellyhogan" target="_blank" rel="noopener noreferrer">
  	        <img 
  	          src={github} 
  	          alt="GitHub" 
@@ -23,7 +23,7 @@ export default () => (
  	      </a>
   	  </li>
   	  <li className="footer-li">
- 	      <a title="linkedin" href="https://www.linkedin.com/in/kelly-hogan-184ba5105/" target="_blank">
+ 	      <a title="linkedin" href="https://www.linkedin.com/in/kelly-hogan-184ba5105/" target="_blank" rel="noopener noreferrer">
  	        <img 
  	          src={linkedin} 
  	          alt="Linkedin" 

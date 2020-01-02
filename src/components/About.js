@@ -15,7 +15,7 @@ export default ({id}) => (
   </h1>
   <p className="about-me">
     I am a Software Developer for&nbsp;
-    <a href="https://www.jpmorganchase.com/" target="_blank">
+    <a href="https://www.jpmorganchase.com/" target="_blank" rel="noopener noreferrer">
       JPMorgan Chase & Co.
     </a>
     &nbsp;in the New York Metropolitan Area.
