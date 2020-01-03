@@ -1,13 +1,28 @@
 .title {
-  text-align: center;
+  text-align: left;
   font-size: 3rem;
+  padding-left: 33%;
 }
 
 .about-me {
-   text-align: center;
-   line-height: 160%
+   text-align: left;
+   line-height: 160%;
+   padding-left: 10%;
+   padding-top: 3%;
 }
 
-.crop {
-overflow: hidden;
+.profile {
+  width: 40vh;
+  position: relative;
+  display: block;
+  float:left;
+}
+
+.about-wrapper {
+  float:right;
+  width: calc(100% - 40vh);
+}
+
+.wrapper {
+  overflow: hidden;
 }
