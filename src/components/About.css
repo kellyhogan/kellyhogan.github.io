@@ -1,28 +1,53 @@
 .title {
   text-align: left;
   font-size: 3rem;
-  padding-left: 33%;
+  padding-left:30%;
 }
 
 .about-me {
    text-align: left;
    line-height: 160%;
-   padding-left: 10%;
-   padding-top: 3%;
+   padding-right: 5%;
+   padding-top: 2%;
 }
 
 .profile {
   width: 40vh;
   position: relative;
   display: block;
-  float:left;
+  float:right;
 }
 
 .about-wrapper {
-  float:right;
+  float:left;
   width: calc(100% - 40vh);
 }
 
 .wrapper {
   overflow: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0px 0px 0px 0px;
+  }
+  
+  .about-me {
+     text-align: center;
+     line-height: 160%;
+     padding: 0px 0px 0px 0px;
+  }
+  
+  .profile {
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-wrapper {
+    float:none;
+    width:100%;
+  }
 }
