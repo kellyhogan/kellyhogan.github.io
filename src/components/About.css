@@ -115,4 +115,50 @@
     float:none;
     width:100%;
   }
+
+  .bar-graph-wrapper .skill {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .bar-graph-wrapper .skill {
+     padding: 0px 0px 0px 0px;
+  }
+}
+
+/*iPad Pro*/
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .title {
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .about-me {
+     text-align: center;
+     line-height: 160%;
+     padding: 0px 0px 0px 0px;
+  }
+  
+  .profile {
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-wrapper {
+    float:none;
+    width:100%;
+  }
+
+  .bar-graph-wrapper .skill {
+    width: 25%;
+  }
+
+  .bar-graph-wrapper {
+    width: 100%; 
+  }
+  .bar-graph-wrapper .skill {
+     padding: 0px 0px 0px 0px;
+  }
 }
