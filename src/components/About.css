@@ -153,12 +153,10 @@
 
   .bar-graph-wrapper .skill {
     width: 25%;
+    padding-top: 1%;
   }
 
   .bar-graph-wrapper {
     width: 100%; 
-  }
-  .bar-graph-wrapper .skill {
-     padding: 0px 0px 0px 0px;
   }
 }
