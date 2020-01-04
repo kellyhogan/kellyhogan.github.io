@@ -27,13 +27,78 @@
   overflow: hidden;
 }
 
-@media only screen and (max-width: 480px) {
+.bar-graph-wrapper {
+  width: calc(100% - 50vh);
+  float:left;
+}
+
+.bar-graph-wrapper > div {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.bar-graph-wrapper .skill {
+  border-radius: 3px 0px 0px 3px;
+  padding-top: 2%;
+  width: 20%;
+  background-color:#296e89;
+  color: white;
+  height: 100%;
+  float:left;
+  height: 45px;
+  text-align:center;
+}
+
+.bar {
+  float:left;
+  width:100%;
+}
+
+.generic-bar {
+  border-radius: 0px 3px 3px 0px;
+  background-color: #64b2d1;
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+  float:left;
+}
+
+.bar-graph-wrapper .bar-one {
+  width: 75%;
+}
+ 
+.bar-graph-wrapper .bar-two {
+  width: 60%;
+}
+
+.bar-graph-wrapper .bar-three {
+  width: 30%;
+}
+
+.bar-graph-wrapper .bar-four {
+  width: 20%;
+}
+
+.bar-graph-wrapper .bar-five {
+  width: 40%;
+}
+
+.bar-graph-wrapper .bar-six {
+  width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
   .title {
-    text-align: center;
-    font-size: 3rem;
     padding: 0px 0px 0px 0px;
+    text-align: center;
   }
-  
+
+  .bar-graph-wrapper {
+    width: 100%; 
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .about-me {
      text-align: center;
      line-height: 160%;
