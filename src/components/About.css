@@ -65,6 +65,7 @@
 
 .bar-graph-wrapper .bar-one {
   width: 75%;
+  animation: 5s anim-lightspeed-in ease forwards;
 }
  
 .bar-graph-wrapper .bar-two {
@@ -85,6 +86,17 @@
 
 .bar-graph-wrapper .bar-six {
   width: 50%;
+}
+
+@keyframes anim-lightspeed-in {
+  0% {
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -118,6 +130,12 @@
 
   .bar-graph-wrapper .skill {
     width: 25%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bar-graph-wrapper .skill {
+     padding-top: 2.5%;
   }
 }
 
