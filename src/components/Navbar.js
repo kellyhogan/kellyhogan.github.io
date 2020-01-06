@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from "react-scroll"
+import {Link} from "react-scroll"
 import React from "react"
 import Hamburger from "./Hamburger"
 
@@ -23,10 +23,6 @@ class Navbar extends React.Component {
     });
   };
 
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
   handleNavClassName = () => {
     return !this.state.isNavVisable ? "hidden-nav" : ""
   };
@@ -46,7 +42,7 @@ class Navbar extends React.Component {
   renderHamburger = () => {
     return (
       <Hamburger
-        onClick={() => this.handleClick()}
+        onClick={() => this.handleClick()} onKeyDown={() => this.handleClick}
         isToggled={this.state.isHamburgerToggled}
       />
     );
@@ -65,9 +61,17 @@ class Navbar extends React.Component {
     return (
       <nav id="navbar" className={this.handleNavClassName()}>
         <div>
-          <div className={this.handleMenuClassName()} onClick={this.scrollToTop}>
+          <Link 
+            className={this.handleMenuClassName()} 
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
              Home
-          </div>
+          </Link>
           <Link
             className={this.handleMenuClassName()}
             activeClass="active"
@@ -101,9 +105,9 @@ class Navbar extends React.Component {
           >
             Contact
           </Link>
-          <div className={this.handleHamburgerClassName()}>
+          <button className={this.handleHamburgerClassName()}>
             {this.renderHamburger()}
-          </div>
+          </button>
         </div>
       </nav>
     );

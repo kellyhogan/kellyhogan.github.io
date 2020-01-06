@@ -53,7 +53,7 @@ nav {
   color: #ff5b4d;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 620px) {
   .nav-li {
     display: none;
   }
