@@ -2,6 +2,8 @@ import React from "react"
 
 import "./About.css"
 import profile from "../images/profile.png"
+import github from "../images/github_black.svg"
+import linkedin from "../images/linkedin_black.svg"
 
 export default ({id}) => (
   <div id={id} className="wrapper">
@@ -95,8 +97,24 @@ export default ({id}) => (
           </div>
        </div>
     </div>
-
-
-
+    <div className="connect-wrapper">
+      <span className="lets-connect">Let's connect</span>
+      <div className="about-me-graphics">
+        <a title="github" href="https://github.com/kellyhogan" target="_blank" rel="noopener noreferrer">
+ 	  <img 
+ 	    src={github} 
+ 	    alt="GitHub" 
+ 	    style={{ width: '3em', height: '3em'}}
+ 	  />
+ 	</a>
+ 	<a title="linkedin" href="https://www.linkedin.com/in/kelly-hogan-184ba5105/" target="_blank" rel="noopener noreferrer">
+ 	  <img 
+ 	    src={linkedin} 
+ 	    alt="Linkedin" 
+ 	    style={{ width: '3em', height: '3em'}}
+ 	  />
+ 	</a>
+      </div>
+    </div>
   </div>
 );
