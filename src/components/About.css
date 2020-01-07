@@ -24,6 +24,7 @@
 
 .wrapper {
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .bar-graph-wrapper {
@@ -111,9 +112,45 @@
     width: 50%;
 }
 
+.connect-wrapper {
+  text-align: center;
+  float: right;
+  width: 40vh;
+  margin-top: 10px;
+}
+
+.lets-connect {
+  font-size: 1.618rem;
+  color:#ff5b4d;
+  font-family: 'Lato',sans-serif;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+.about-me-graphics {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 5px;
+  border-radius: 6px;
+  list-style:none;
+}
+
+.about-me-graphics > a {
+  margin: 7px;
+}
+
 @media only screen and (max-width: 800px) {
   .bar-graph-wrapper {
     width: 100%; 
+  }
+
+  .connect-wrapper {
+    width: 100%;
   }
 }
 
