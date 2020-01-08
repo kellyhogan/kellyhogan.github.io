@@ -1,4 +1,4 @@
-.title {
+.about-title {
   text-align: center;
   font-size: 3rem;
   margin-right:30%;
@@ -17,12 +17,12 @@
   float:right;
 }
 
-.about-wrapper {
+.about-content-wrapper {
   float:left;
   width: calc(100% - 40vh);
 }
 
-.wrapper {
+.about-wrapper {
   overflow: hidden;
   margin-bottom: 40px;
 }
@@ -155,7 +155,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .title {
+  .about-title {
      margin-right: 0px;
   }
 
@@ -171,7 +171,7 @@
     margin-right: auto;
   }
 
-  .about-wrapper {
+  .about-content-wrapper {
     float:none;
     width:100%;
   }
@@ -195,7 +195,7 @@
 
 /*iPad Pro*/
 @media only screen and (width: 1024px) and (height: 1366px) {
-  .title {
+  .about-title {
     margin-right: 0px;
     text-align: center;
   }
@@ -212,7 +212,7 @@
     margin-right: auto;
   }
 
-  .about-wrapper {
+  .about-content-wrapper {
     float:none;
     width:100%;
   }
@@ -225,4 +225,9 @@
   .bar-graph-wrapper {
     width: 100%; 
   }
+
+  .connect-wrapper {
+    width: 100%;
+  }
+
 }

@@ -6,14 +6,14 @@ import github from "../images/github_black.svg"
 import linkedin from "../images/linkedin_black.svg"
 
 export default ({id}) => (
-  <div id={id} className="wrapper">
-    <div className="about-wrapper">
-      <h1 className="title">
+  <div id={id} className="about-wrapper">
+    <div className="about-content-wrapper">
+      <h1 className="about-title">
        About 
       </h1>
     </div>
     <img src={profile} className="profile" alt="Kelly Hogan"/>
-    <div className="about-wrapper">
+    <div className="about-content-wrapper">
       <p className="about-me">
        I am a Software Developer for&nbsp;
        <a href="https://www.jpmorganchase.com/" target="_blank" rel="noopener noreferrer">
