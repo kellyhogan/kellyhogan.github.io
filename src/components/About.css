@@ -88,21 +88,21 @@
     width: 0; 
 }
 [data-aos="anim-bar-three"].aos-animate {
-    width: 25%;
+    width: 21%;
 }
 
 [data-aos="anim-bar-four"] {
     width: 0; 
 }
 [data-aos="anim-bar-four"].aos-animate {
-    width: 15%;
+    width: 13%;
 }
 
 [data-aos="anim-bar-five"] {
     width: 0; 
 }
 [data-aos="anim-bar-five"].aos-animate {
-    width: 35%;
+    width: 38%;
 }
 
 [data-aos="anim-bar-six"] {

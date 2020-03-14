@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/Layout-Index.js"
 import SEO from "../components/Seo"
@@ -23,7 +22,6 @@ class IndexPage extends React.Component {
           <About id="about"/>
           <Projects id="projects"/>
           <Contact id="contact"/>
-          <Link to="/page-2/">Go to page 2</Link>
         </Layout>
       </>
     );
