@@ -17,7 +17,7 @@ const HomeImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "background_mt_cropped_dark1.png" }) {
+        placeholderImage: file(relativePath: { eq: "mountain_color.png" }) {
           childImageSharp {
 
             fluid(maxWidth: 3840) {
