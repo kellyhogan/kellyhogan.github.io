@@ -4,6 +4,10 @@
    flex: 1;
 }
 
+.tech-skills {
+  margin-top: 4rem;
+}
+
 .who-is-she {
   font-size: 4rem;
   margin-bottom: 4rem;
@@ -44,91 +48,6 @@ a:visited {
   margin-bottom: 40px;
 }
 
-.bar-graph-wrapper {
-  width: calc(100% - 50vh);
-  float:left;
-}
-
-.bar-graph-wrapper > div {
-  margin-bottom: 8px;
-  width: 100%;
-}
-
-.bar-graph-wrapper .skill {
-  border-radius: 3px 0px 0px 3px;
-  padding-top: 1.5%;
-  width: 20%;
-  background-color:#296e89;
-  color: white;
-  float:left;
-  height: 45px;
-  text-align:center;
-}
-
-.bar-graph-wrapper .percentage {
-  padding-right: 7px;
-  padding-top: 10px;
-  color: white;
-  float:right;
-  height: 45px;
-}
-
-.bar {
-  float:left;
-  width:100%;
-}
-
-.generic-bar {
-  border-radius: 0px 3px 3px 0px;
-  background-color: #64b2d1;
-  height: 45px;
-  overflow: hidden;
-  position: relative;
-  float:left;
-}
-
-[data-aos="anim-bar-one"] {
-    width: 0; 
-}
-[data-aos="anim-bar-one"].aos-animate {
-    width: 70%;
- }
-
-[data-aos="anim-bar-two"] {
-    width: 0; 
-}
-[data-aos="anim-bar-two"].aos-animate {
-    width: 60%;
-}
-
-[data-aos="anim-bar-three"] {
-    width: 0; 
-}
-[data-aos="anim-bar-three"].aos-animate {
-    width: 21%;
-}
-
-[data-aos="anim-bar-four"] {
-    width: 0; 
-}
-[data-aos="anim-bar-four"].aos-animate {
-    width: 13%;
-}
-
-[data-aos="anim-bar-five"] {
-    width: 0; 
-}
-[data-aos="anim-bar-five"].aos-animate {
-    width: 38%;
-}
-
-[data-aos="anim-bar-six"] {
-    width: 0; 
-}
-[data-aos="anim-bar-six"].aos-animate {
-    width: 50%;
-}
-
 .connect-wrapper {
   text-align: center;
   margin-top: 30px;
@@ -146,10 +65,6 @@ a:visited {
 }
 
 @media only screen and (max-width: 800px) {
-  .bar-graph-wrapper {
-    width: 100%; 
-  }
-
   .connect-wrapper {
     width: 100%;
   }
@@ -176,22 +91,12 @@ a:visited {
     float:none;
     width:100%;
   }
-
-  .bar-graph-wrapper .skill {
-    width: 25%;
-  }
 }
 
 @media only screen and (max-width: 480px) {
-  .bar-graph-wrapper .skill {
-     padding-top: 2.5%;
-  }
 }
 
 @media only screen and (max-width: 320px) {
-  .bar-graph-wrapper .skill {
-     padding: 0px 0px 0px 0px;
-  }
 }
 
 /*iPad Pro*/
@@ -216,15 +121,6 @@ a:visited {
   .about-content-wrapper {
     float:none;
     width:100%;
-  }
-
-  .bar-graph-wrapper .skill {
-    width: 25%;
-    padding-top: 1%;
-  }
-
-  .bar-graph-wrapper {
-    width: 100%; 
   }
 
   .connect-wrapper {
