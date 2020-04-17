@@ -86,17 +86,6 @@ class Navbar extends React.Component {
           <Link
             className={this.handleMenuClassName()}
             activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            Projects
-          </Link>
-          <Link
-            className={this.handleMenuClassName()}
-            activeClass="active"
             to="contact"
             spy={true}
             smooth={true}
