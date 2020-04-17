@@ -52,35 +52,35 @@
     width: 0; 
 }
 [data-aos="anim-bar-two"].aos-animate {
-    width: 60%;
+    width: 62.2%;
 }
 
 [data-aos="anim-bar-three"] {
     width: 0; 
 }
 [data-aos="anim-bar-three"].aos-animate {
-    width: 21%;
+    width: 27.2%;
 }
 
 [data-aos="anim-bar-four"] {
     width: 0; 
 }
 [data-aos="anim-bar-four"].aos-animate {
-    width: 13%;
+    width: 15.5%;
 }
 
 [data-aos="anim-bar-five"] {
     width: 0; 
 }
 [data-aos="anim-bar-five"].aos-animate {
-    width: 38%;
+    width: 46.7%;
 }
 
 [data-aos="anim-bar-six"] {
     width: 0; 
 }
 [data-aos="anim-bar-six"].aos-animate {
-    width: 50%;
+    width: 56%;
 }
 
 @media only screen and (max-width: 800px) {
