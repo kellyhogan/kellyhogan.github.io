@@ -78,7 +78,7 @@ class Navbar extends React.Component {
             to="about"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={0}
             duration={500}
           >
             About
