@@ -11,11 +11,24 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   /*text-shadow: #494969 1px 0 10px;*/
-  text-shadow: #0a0a0f 1px 0 10px;
   /*background-color: rgba(224, 224, 235, 0.5)*/
+}
+
+.click-here-box {
+  border-style: solid;
+  border-color: white;
+  font-size: 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.click-here-box:hover {
+  background-color: white;
+  color: #333;
 }
 
 .intro {
   font-size: 3rem;
   line-height: 160%;
+  text-shadow: #0a0a0f 1px 0 10px;
 }

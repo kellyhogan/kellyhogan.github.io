@@ -1,6 +1,6 @@
 .contact-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .contact-wrapper {
@@ -9,7 +9,7 @@
 }
 
 .contact-form {
-  width: 60%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
