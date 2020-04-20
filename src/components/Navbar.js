@@ -1,13 +1,15 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+import {Link} from "react-scroll"
 import React from "react"
+import Hamburger from "./Hamburger"
 
 import "./Navbar.css"
 
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      isHamburgerToggled: false
+    };
   }
  
   handleScroll = () => {
@@ -16,16 +18,34 @@ class Navbar extends React.Component {
     const isNavVisable = newScrollHeight <= scrollHeight;
     this.setState({
       scrollHeight: newScrollHeight,
-      isNavVisable: isNavVisable
+      isNavVisable: isNavVisable,
+      isHamburgerToggled: false
     });
   };
 
-  handleClassName = () => {
-    if(!this.state.isNavVisable) {
-       return "hidden-nav";
-    }else{
-       return "";
-    }
+  handleNavClassName = () => {
+    return !this.state.isNavVisable ? "hidden-nav" : ""
+  };
+
+  handleMenuClassName = () => {
+    return this.state.isHamburgerToggled ? "nav-li responsive-nav" : "nav-li"
+  };
+
+  handleHamburgerClassName = () => {
+    return this.state.isHamburgerToggled ? "hidden-icon responsive-hamburger" : "hidden-icon"
+  };
+
+  handleClick = () => {
+    this.setState({isHamburgerToggled: !this.state.isHamburgerToggled});
+  };
+
+  renderHamburger = () => {
+    return (
+      <Hamburger
+        onClick={() => this.handleClick()} onKeyDown={() => this.handleClick}
+        isToggled={this.state.isHamburgerToggled}
+      />
+    );
   };
 
   componentDidMount() {
@@ -39,13 +59,45 @@ class Navbar extends React.Component {
  
   render() {
     return (
-      <nav id="navbar" className={this.handleClassName()}>
-        <ul className="nav-ul">
-            <li className="nav-li">Home</li>
-            <li className="nav-li">About</li>
-            <li className="nav-li">Projects</li>
-            <li className="nav-li">Contact</li>
-        </ul>
+      <nav id="navbar" className={this.handleNavClassName()}>
+        <div>
+          <Link 
+            className={this.handleMenuClassName()} 
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+             Home
+          </Link>
+          <Link
+            className={this.handleMenuClassName()}
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            About
+          </Link>
+          <Link
+            className={this.handleMenuClassName()}
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Contact
+          </Link>
+          <button className={this.handleHamburgerClassName()}>
+            {this.renderHamburger()}
+          </button>
+        </div>
       </nav>
     );
   }

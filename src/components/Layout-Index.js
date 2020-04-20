@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Navbar from "./Navbar"
-import Image from "./Image"
+import Home from "./Home"
 import Footer from "./Footer"
 
 import "./Layout-Index.css"
@@ -29,16 +29,7 @@ const Layout = ({ children }) => (
     render={data => (
       <div className="wrapper">
         <Navbar />
-        <div className="header-container">
-          <div className="centered">
-            <h1 className="intro">
-              Hello, I'm <span style={{color:"#ff5b4d"}}>Kelly Hogan</span>.
-              <br></br>
-              I'm a Software Developer.
-            </h1>        
-          </div>
-          <Image />
-        </div>
+        <Home id="home"/>
         <div className="content">
           <main>{children}</main>
         </div>
