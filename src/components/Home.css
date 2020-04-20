@@ -20,6 +20,8 @@
   font-size: 2rem;
   background-color: #333;
   color: white;
+  border-radius: 4px;
+  padding: 6px 10px;
 }
 
 .click-here-box:hover {
