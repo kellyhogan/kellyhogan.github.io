@@ -44,9 +44,10 @@ nav {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px 10px 25px;
+  padding: 10px 10px 10px 10px;
   margin: 0;
   display: none;
+  border: none;
 }
 
 .nav-li:hover {
@@ -77,5 +78,6 @@ nav {
   .hidden-icon {
     float: left;
     display: block;
+    background-color: #333;
   }
 }
