@@ -37,3 +37,20 @@
 .contact-button:hover {
   background-color:#296e89;
 }
+
+@media only screen and (max-width: 800px) {
+
+  .contact-form {
+    width: 70%;
+  }   
+
+}
+
+/*ipad pro*/
+@media only screen and (width: 1024px) and (height: 1366px) {
+
+  .contact-form {
+    width: 50%;
+  }   
+
+}

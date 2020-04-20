@@ -1,6 +1,6 @@
 .bar-graph-wrapper {
-    margin-left: 10%;
-    margin-right: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .bar-graph-wrapper > div {
@@ -83,20 +83,7 @@
     width: 56%;
 }
 
-@media only screen and (max-width: 800px) {
-  .bar-graph-wrapper {
-    width: 100%; 
-  }
-
-  .connect-wrapper {
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 600px) {
-  .about-title {
-  }
-
   .bar-graph-wrapper .skill {
     width: 25%;
   }
@@ -112,18 +99,4 @@
   .bar-graph-wrapper .skill {
      padding: 0px 0px 0px 0px;
   }
-}
-
-/*iPad Pro*/
-@media only screen and (width: 1024px) and (height: 1366px) {
-
-  .bar-graph-wrapper .skill {
-    width: 25%;
-    padding-top: 1%;
-  }
-
-  .bar-graph-wrapper {
-    width: 100%; 
-  }
-
 }
