@@ -18,6 +18,10 @@
   margin-right: 10%;
 }
 
+a {
+  color: #ff5b4d;
+}
+
 a:visited {
   color: #ff5b4d;
 }
